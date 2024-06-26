@@ -1,0 +1,46 @@
+/* article-view.component.scss */
+.article-container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: fit-content;
+    margin: auto;
+    overflow: auto; /* Ensures that the container does not overflow */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    align-items: start;
+  
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ff6347; /* Tomato color for the title */
+      width: 100%;
+      text-align: start; /* Center the title */
+    }
+  
+    .article-content {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      margin-bottom: 20px;
+      width: 100%;
+  
+      img {
+        max-width: 100%; /* Ensure images do not exceed the container width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Prevent inline spacing issues */
+        margin: 10px 0; /* Optional: Add some margin for better spacing */
+      }
+    }
+  
+    .article-author {
+      font-size: 1em;
+      text-align: right;
+      font-style: italic;
+      color: #b0b0b0;
+      width: 100%;
+    }
+  }
+  

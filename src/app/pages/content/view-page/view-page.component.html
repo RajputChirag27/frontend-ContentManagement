@@ -1,0 +1,7 @@
+<!-- article-view.component.html -->
+<div *ngIf="article" class="article-container">
+    <h1>{{ article.title }}</h1>
+    <div class="article-content" [innerHTML]="article.content"></div>
+    <div class="article-author">Author: {{ article.author }}</div>
+  </div>
+  
