@@ -13,6 +13,7 @@ const routes: Routes = [
       // { path: '', component: HomepageComponent, pathMatch: 'full'}, // Default route
       { path: '', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
       {path: 'content', loadChildren: () => import('./content/content.module').then(m=> m.ContentModule)},
+      { path: 'media', loadChildren: () => import('./media/media.module').then(m => m.MediaModule) },
       // { path: 'home', component: HomepageComponent }, // Home route
     ]
   },
