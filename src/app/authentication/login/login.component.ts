@@ -44,7 +44,7 @@ export class LoginComponent {
           progressBar: true,
         });
           this._authService.setToken(response.result.token);
-          this._authService.setRole(response.result.user.role)
+          // this._authService.setRole(response.result.user.role)
           this.router.navigate(['/pages/home']);
       },
       (error : any) => {

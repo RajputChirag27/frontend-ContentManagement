@@ -1,8 +1,30 @@
-<div class="container my-5">
+<h1 class="text-white text-center">Articles</h1>
+<div class="container overflow-auto my-5">
     <ag-grid-angular
-    style="width: 100%; height: 500px;"
-    class="ag-theme-custom"
-    [rowData]="rowData"
-    [columnDefs]="columnDefs">
-</ag-grid-angular>
+        style="width: 100%; height: 600px;"
+        class="ag-theme-custom"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        [pagination]="true"
+        [paginationPageSize]="20"
+        [domLayout]="'autoHeight'"
+        [defaultColDef]="defaultColDef">
+    </ag-grid-angular>
 </div>
+
+
+
+<h1 class="text-white text-center">Media</h1>
+<div class="container overflow-auto my-5">
+    <ag-grid-angular
+        style="width: 100%; height: 600px;"
+        class="ag-theme-custom"
+        [rowData]="mediaData"
+        [columnDefs]="mediaDefs"
+        [pagination]="true"
+        [paginationPageSize]="20"
+        [domLayout]="'autoHeight'"
+        [defaultColDef]="defaultColDef">
+    </ag-grid-angular>
+</div>
+

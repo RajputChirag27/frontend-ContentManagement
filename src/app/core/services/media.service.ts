@@ -10,6 +10,8 @@ import { environment } from 'src/environments/environment.development';
 export class MediaService {
   private apiUrl : string = environment.apiUrl;
   constructor(private http: HttpClient) { }
+  
+  
   upload(file: File, formData: any): Observable<HttpEvent<any>> {
     const uploadData = new FormData();
     uploadData.append('file', file);
@@ -29,5 +31,21 @@ export class MediaService {
         throw error;
       })
     );
+  }
+
+  getMedia(){
+    return this.http.get(`${this.apiUrl}/media`);
+  }
+
+  deleteMedia(id : string){
+    return this.http.delete(`${this.apiUrl}/media/${id}`);
+  }
+
+  updateMedia(id : string, data : any){
+    return this.http.put(`${this.apiUrl}/media/${id}`, data);
+  }
+
+  getMediaById(id : string){
+    return this.http.get(`${this.apiUrl}/media/${id}`);
   }
 }

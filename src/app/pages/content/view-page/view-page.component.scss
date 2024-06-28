@@ -10,15 +10,15 @@
     word-wrap: break-word; /* Break long words to prevent overflow */
     display: flex;
     flex-direction: column;
-    justify-content: start; 
-    align-items: start;
+    justify-content: flex-start; 
+    align-items: flex-start ;
   
     h1 {
       font-size: 2.5em;
       margin-bottom: 20px;
       color: #ff6347; /* Tomato color for the title */
       width: 100%;
-      text-align: start; /* Center the title */
+      text-align: flex-start; /* Center the title */
     }
   
     .article-content {
